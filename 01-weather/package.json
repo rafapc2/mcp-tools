@@ -1,0 +1,19 @@
+{
+  "name": "01-weather",
+  "version": "1.0.0",
+  "description": "basado en este live de midu https://www.youtube.com/watch?v=wnHczxwukYY&t=1643s",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "dotenv": "^16.5.0",
+    "tsx": "^4.19.3",
+    "zod": "^3.24.3"
+  }
+}

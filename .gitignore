@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# node_modules
+node_modules/
+# yarn-error.log
+yarn-debug.log*
+yarn-error.log
+
+# mac
+.DS_Store
