@@ -3,7 +3,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {z} from "zod";
 
-//ser ver definition 
+// server definition
 const server = new McpServer({
   name: "Demo- Weather",
   description: "Weather API",
@@ -34,8 +34,6 @@ server.tool(
     const {latitude, longitude} = data1.results[0]
     const weatherResponse = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&hourly=temperature_2m&current=is_day,temperature_2m,relative_humidity_2m,apparent_temperature&forecast_days=1`)
     const weatherData = await weatherResponse.json();
-
-    https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&
     return{
       content: [
         {
@@ -48,7 +46,7 @@ server.tool(
 
 )
 
-// listening client conections
+// listening client connections
 const transport = new StdioServerTransport();
 await server.connect (transport)
 //console.log("Server started");
